@@ -1,255 +1,195 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
 
-body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5 ;
-  color: #222;
-  padding-bottom: 20px;
+<html lang="fr">
+    <head>
+        <title>Garnier Macéo</title>
+        <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+        <script src = "script.js"></script>
+    </head>
 
-}
-
-section:not(.hero) {
-  background-color: #dae7f3 ;
-  color: #222;
-  padding: 30px 5%;
-  border-radius: 8px;
-  margin: 75px auto;
-  max-width: 900px;
-}
-
-section > h2{
-  margin-bottom: 10px;
-}
+    <body>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Macéo Garnier</h1>
+                <p>Étudiant en BUT Informatique - Passionné par le développement</p>
+            </div>
+        </section>
 
 
+        <section id="infos-perso">
+            <h2>Qui suis-je ?</h2>
+            <div class="presentation">
+                <p>Bonjour, je m’appelle Macéo Garnier, étudiant en BUT Informatique. Passionné par le développement et les nouvelles technologies, 
+                je travaille sur des projets concrets qui me permettent de renforcer mes compétences en programmation, gestion de bases 
+                de données et conception d’applications. Rigoureux, curieux et autonome, je sais m’adapter rapidement et travailler efficacement 
+                en équipe. N’hésitez pas à parcourir mon portfolio et à me contacter pour échanger !</p>
+            </div>
+        </section>
 
+        <section>
+            <h2>Mon Parcours</h2>
 
-/* Hero */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url('images/fond.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
+            <div class="parcours">
+                
+                <div class="etape">
+                    <h3>Brevet des collèges</h3>
+                    <span>2017 - 2021</span>
+                    <p>Diplôme avec mention bien</p>
+                    <p>Collège Raoul Duffy, Lyon 3 - France</p>
+                </div>
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
+                <div class="etape">
+                    <h3>Baccalauréat Général</h3>
+                    <span>2021 - 2024</span>
+                    <p>Diplôme avec mention assez bien</p>
+                    <p>Lycée Docteur Chrales Merieux, Lyon 7 - France</p>
+                </div>
+                <div class="etape">
+                    <h3>BUT Informatique</h3>
+                    <span>2024 - 2025</span>
+                    <p>Première année de BUT</p>
+                    <p>I.U.T.2 de Grenoble, France</p>
+                </div>
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
+                <div class="etape">
+                    <h3>Équipier polyvalent McDonald's</h3>
+                    <span>Été 2025</span>
+                    <p>Première expérience professionnelle</p>
+                    <p>McDonald's, Vern-sur-Seiche - France</p>
+                </div>
+            </div>
+        </section>
 
+        <section>
+            <h2>Mes Compétences</h2>
+            <div class="competences">
+                
+                <figure>
+                    <img src="images/HTML.png" alt="LOGO html5">
+                    <figcaption>HTML5</figcaption>
+                </figure>
 
+                <figure>
+                    <img src="images/CSS.png" alt="LOGO css3">
+                    <figcaption>CSS3</figcaption>
+                </figure>
 
-.presentation p {
-  margin-top: 10px ;
-  line-height: 1.2;
-  font-size: 18px;
-}
+                <figure>
+                    <img src="images/JAVA.png" alt="LOGO java" >
+                    <figcaption>Java</figcaption>
+                </figure>
 
+                <figure>
+                    <img src="images/SQL.png" alt="LOGO my-sql">
+                    <figcaption>SQL</figcaption>
+                </figure>
 
+                <figure>
+                    <img src="images/PYTHON.png" alt="LOGO python">
+                    <figcaption>Python</figcaption>
+                </figure>
+            </div>
 
+        </section>
 
-/* Timeline parcours */
-.parcours {
-  position: relative;
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 0 15px;
-}
+        <section id="projets">
+            <h2>Mes projets</h2>
+            <div class="projet">
+                <img src="images/alten.jpg" alt="Logo Alten">
+                <div>
+                    <p>Site en HTML - CSS</p>
+                    <p>Refonte du site d'Alten</p>
+                    <a href="https://tokachioff.github.io/Portfolio_public/Portfolio/Projet_Alten/main.html" target="_blank">Site Alten</a>
+                </div>
+            </div>
 
-.parcours::before {
-  content: '';
-  position: absolute;
-  left: 30px;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #2196F3;
-}
+            <div class="projet">
+                <img src="images/aqua-athletics.jpg" alt="Logo Aqua Athletics">
+                <div>
+                    <p>Site en HTML - CSS</p>
+                    <p>Création d'un site en anglais pour une entreprise fictive</p>
+                    <a href="https://tokachioff.github.io/aqua_athletics/Site%20anglais/main.html" target="_blank">Site Aqua Athletics</a>
+                </div>
+            </div>
 
-.etape {
-  margin: 20px 0;
-  padding-left: 70px;
-  position: relative;
-}
+            <div class="projet">
+                <img src="images/depeche.jpg" alt="Depeche">
+                <div>
+                    <P>Programme en Java</P>
+                    <p>développement d'un programme capable de classer automatiquement des dépêches d’actualité par thématique.</p>
+                </div>
+            </div>
 
-.etape::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  background: white;
-  border: 4px solid #2196F3;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  top: 5px;
-}
+        </section>
 
-.etape h3 {
-  margin: 0;
-  font-size: 18px;
-}
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Si vous êtes intéressé(e) par mon profil, n'hésitez pas à me contacter en utilisant le formulaire ou les coordonnées ci-dessous</p>
+            
+            <form class='formulaire' method="post">
+                <div>
+                    <p>Nom *</p>
+                    <input id="nom" type="text" name="nom" placeholder="NOM" required="">
+                </div>
 
-.etape span {
-  color: #555;
-  font-size: 14px;
-}
+                <div>
+                    <p>Prénom</p>
+                    <input id="prenom" type="text" name="prenom" placeholder="PRÉNOM">
+                </div>
 
-.etape p {
-  margin: 5px 0 0;
-}
+                <div>
+                    <p>E-Mail *</p>
+                    <input id="email" type="email" name="email" placeholder="E-MAIL" required="">
+                </div>
 
+                <div>
+                    <p>Telephone</p>
+                    <input id="telephone" type="tel" name="telephone" placeholder="TÉLÉPHONE">
+                </div>
 
-/* Compétences*/
-.competences img{
-  width:200px;
-}
+                <div>
+                    <p>Objet *</p>
+                    <input id="objet" type="text" name="objet" placeholder="OBJET">
+                </div>
 
-.competences {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 0;
-}
+                <div>
+                    <p>Message *</p>
+                    <textarea name="message" placeholder="MESSAGE"></textarea>
+                </div>
+                <p>* Champ obligatoire</p>
 
-.competences figure {
-  text-align: center;
-  width: 200px;
-}
+                <button type="submit" value="Send">Send</button>
+            </form>
 
-.competences figcaption {
-  text-align: center  ;
-  margin-top: 8px;
-  font-weight: bold;
-  color: #222;
-}
+            <div>
+                <ul>
+                    <li>
+                        <a class="copiable" onclick="copierTexte(this)"><img src="images/MAIL.png" ><p class="mail">maceogarnier@gmail.com</p></a>
+                    </li>
 
+                    <li>
+                        <a href="CV_Maceo_Garnier.pdf" download="CV_Maceo_Garnier" alt="CV"><img src="images/TELECHARGEMENT.png" >Télécharger mon CV</a>
+                    </li>
 
-/* Section projets */
-.projet {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 25px;
-}
+                    <li>
+                        <a href="https://" target="_blank" ><img src="images/LINKEDIN.png">Garnier Macéo</a>
+                    </li>
 
-.projet img {
-  width: 150px;
-  border-radius: 6px;
-}
+                    <li>
+                        <a href="https://github.com/maceooooo" target="_blank" ><img src="images/GITHUB.png">maceooooo</a>
+                    </li>
+                </ul>
+            </div>
 
-
-
-/* Formulaire contact */
-#contact {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap; /* Pour le responsive */
-}
-
-form{
-  width: 60%;
-  margin-top: 50px;
-}
-
-form div {
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #222;
-}
-
-form input,
-form textarea {
-  padding: 8px 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: none;
-}
-
-form textarea {
-  min-height: 100px;
-}
-
-/* Bouton envoyer */
-form button {
-  background-color: #2196F3;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: #1976D2;
-}
-
-/* Contact section - liste coordonnées */
-#contact > div{
-  margin-top: 50px;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-#contact li {
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.copiable {
-  cursor: pointer;
-  color: #2196F3;
-  text-decoration: underline;
-}
+        </section>
 
 
 
-/* Responsive simple */
-@media (max-width: 950px) {
-  section:not(.hero) {
-    margin-left: 2%;   /* marge gauche fixe */
-    margin-right: 2%;  /* marge droite fixe */
-    max-width: none;     /* annule la largeur max pour que la section puisse rétrécir */
-  }
-}
 
-@media (max-width: 700px) {
-  .competences {
-    justify-content: center;
-  }
-}
+
+    </body>
+
+
+</html>

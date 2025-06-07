@@ -5,6 +5,7 @@
         <title>Garnier Macéo</title>
         <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <script src = "script.js"></script>
     </head>
 
@@ -35,27 +36,27 @@
                 <div class="etape">
                     <h3>Brevet des collèges</h3>
                     <span>2017 - 2021</span>
-                    <p>Diplome avec mention bien</p>
+                    <p>Diplôme avec mention bien</p>
                     <p>Collège Raoul Duffy, Lyon 3 - France</p>
                 </div>
 
                 <div class="etape">
                     <h3>Baccalauréat Général</h3>
                     <span>2021 - 2024</span>
-                    <p>Diplome avec mention assez bien</p>
+                    <p>Diplôme avec mention assez bien</p>
                     <p>Lycée Docteur Chrales Merieux, Lyon 7 - France</p>
                 </div>
                 <div class="etape">
                     <h3>BUT Informatique</h3>
                     <span>2024 - 2025</span>
-                    <p>Premiere année de BUT</p>
+                    <p>Première année de BUT</p>
                     <p>I.U.T.2 de Grenoble, France</p>
                 </div>
 
                 <div class="etape">
                     <h3>Équipier polyvalent McDonald's</h3>
                     <span>Été 2025</span>
-                    <p>Première experience professionelle</p>
+                    <p>Première expérience professionnelle</p>
                     <p>McDonald's, Vern-sur-Seiche - France</p>
                 </div>
             </div>
@@ -96,18 +97,28 @@
         <section id="projets">
             <h2>Mes projets</h2>
             <div class="projet">
-                <img src="images/alten.jpg" alt="Capture projet 1">
+                <img src="images/alten.jpg" alt="Logo Alten">
                 <div>
                     <p>Site en HTML - CSS</p>
-                    <p>Refonte du site d'alten</p>
+                    <p>Refonte du site d'Alten</p>
+                    <a href="https://tokachioff.github.io/Portfolio_public/Portfolio/Projet_Alten/main.html" target="_blank">Site Alten</a>
                 </div>
             </div>
 
             <div class="projet">
-                <img src="images/aqua-athletics.jpg" alt="Capture projet 1">
+                <img src="images/aqua-athletics.jpg" alt="Logo Aqua Athletics">
                 <div>
                     <p>Site en HTML - CSS</p>
-                    <p>Création d'un site en anglais pour une entreprise fictivz</p>
+                    <p>Création d'un site en anglais pour une entreprise fictive</p>
+                    <a href="https://tokachioff.github.io/aqua_athletics/Site%20anglais/main.html" target="_blank">Site Aqua Athletics</a>
+                </div>
+            </div>
+
+            <div class="projet">
+                <img src="images/depeche.jpg" alt="Depeche">
+                <div>
+                    <P>Programme en Java</P>
+                    <p>développement d'un programme capable de classer automatiquement des dépêches d’actualité par thématique.</p>
                 </div>
             </div>
 
@@ -115,59 +126,59 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <div>
-                <p>Si vous êtes intéressé(e) par mon profil, n'hésitez pas à me contacter en utilisant le formulaire ou les coordonnées ci-dessous</p>
-                <form class='contact' method="post">
-                    <div>
-                        <p>Nom *</p>
-                        <input id="nom" type="text" name="nom" placeholder="NOM" required="">
-                    </div>
+            <p>Si vous êtes intéressé(e) par mon profil, n'hésitez pas à me contacter en utilisant le formulaire ou les coordonnées ci-dessous</p>
+            
+            <form class='formulaire' method="post">
+                <div>
+                    <p>Nom *</p>
+                    <input id="nom" type="text" name="nom" placeholder="NOM" required="">
+                </div>
 
-                    <div>
-                        <p>Prenom</p>
-                        <input id="prenom" type="text" name="prenom" placeholder="PRENOM">
-                    </div>
+                <div>
+                    <p>Prénom</p>
+                    <input id="prenom" type="text" name="prenom" placeholder="PRÉNOM">
+                </div>
 
-                    <div>
-                        <p>E-Mail *</p>
-                        <input id="email" type="email" name="email" placeholder="E-MAIL" required="">
-                    </div>
+                <div>
+                    <p>E-Mail *</p>
+                    <input id="email" type="email" name="email" placeholder="E-MAIL" required="">
+                </div>
 
-                    <div>
-                        <p>Telephone</p>
-                        <input id="telephone" type="tel" name="telephone" placeholder="TÉLÉPHONE">
-                    </div>
+                <div>
+                    <p>Telephone</p>
+                    <input id="telephone" type="tel" name="telephone" placeholder="TÉLÉPHONE">
+                </div>
 
-                    <div>
-                        <p>Objet *</p>
-                        <input id="objet" type="text" name="objet" placeholder="OBJET">
-                    </div>
+                <div>
+                    <p>Objet *</p>
+                    <input id="objet" type="text" name="objet" placeholder="OBJET">
+                </div>
 
-                    <div>
-                        <p>Message *</p>
-                        <textarea name="message" placeholder="MESSAGE"></textarea>
-                    </div>
+                <div>
+                    <p>Message *</p>
+                    <textarea name="message" placeholder="MESSAGE"></textarea>
+                </div>
+                <p>* Champ obligatoire</p>
 
-                    <button type="submit" value="Send">Send</button>
-                </form>
-            </div>
+                <button type="submit" value="Send">Send</button>
+            </form>
 
             <div>
                 <ul>
                     <li>
-                        <p class="copiable" onclick="copierTexte(this)">maceogarnier@gmail.com</p>
+                        <a class="copiable" onclick="copierTexte(this)"><img src="images/MAIL.png" ><p class="mail">maceogarnier@gmail.com</p></a>
                     </li>
 
                     <li>
-                        <a href="CV_Maceo_Garnier.pdf" download="CV_Maceo_Garnier" alt="CV">Télécharger mon CV</a>
+                        <a href="CV_Maceo_Garnier.pdf" download="CV_Maceo_Garnier" alt="CV"><img src="images/TELECHARGEMENT.png" >Télécharger mon CV</a>
                     </li>
 
                     <li>
-                        lien linkdin
+                        <a href="https://" target="_blank" ><img src="images/LINKEDIN.png">Garnier Macéo</a>
                     </li>
 
                     <li>
-                        lien github
+                        <a href="https://github.com/maceooooo" target="_blank" ><img src="images/GITHUB.png">maceooooo</a>
                     </li>
                 </ul>
             </div>

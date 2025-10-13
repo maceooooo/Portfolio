@@ -64,6 +64,7 @@ section > h2{
   margin-top: 10px ;
   line-height: 1.2;
   font-size: 18px;
+  text-align: justify;
 }
 
 
@@ -325,4 +326,5 @@ a img {
     font-size: 13px;
   }
 }
+
 
